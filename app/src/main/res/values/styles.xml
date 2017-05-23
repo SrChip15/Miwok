@@ -30,4 +30,27 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
     </style>
+
+    <style name="ListItemImageStyle">
+        <item name="android:layout_width">@dimen/list_item_height</item>
+        <item name="android:layout_height">@dimen/list_item_height</item>
+        <item name="android:background">@color/tan_background</item>
+    </style>
+
+    <style name="ListItemTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/item_text_color</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <style name="ListItemTextMiwokStyle" parent="ListItemTextStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">top</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
 </resources>

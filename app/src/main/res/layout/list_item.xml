@@ -5,19 +5,32 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/miwok_text_view"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        tools:text="miwok" />
+        android:layout_height="@dimen/list_item_height">
 
-    <TextView
-        android:id="@+id/english_text_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        tools:text="english" />
+        <ImageView
+            android:id="@+id/desc_img"
+            style="@style/ListItemImageStyle" />
+
+        <LinearLayout
+            android:id="@+id/text_container_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_height"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/english_text_view"
+                style="@style/ListItemTextStyle"
+                tools:text="english" />
+
+            <TextView
+                android:id="@+id/miwok_text_view"
+                style="@style/ListItemTextMiwokStyle"
+                tools:text="miwok" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>
