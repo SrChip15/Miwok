@@ -1,6 +1,7 @@
 package com.example.android.miwok;
 
 import android.content.Context;
+import android.media.MediaPlayer;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
@@ -9,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -26,6 +28,8 @@ class WordAdapter extends ArrayAdapter<Word> {
     private ArrayList<Word> mList;
 
     private int mBackgroundColor;
+
+    private MediaPlayer mMediaPlayer;
 
     /**
      * Create new adapter
@@ -54,7 +58,8 @@ class WordAdapter extends ArrayAdapter<Word> {
         }
 
         // Get text container from list_item layout
-        View textContainer = convertView.findViewById(R.id.text_container_linear_layout);
+        LinearLayout textContainer = (LinearLayout)
+                convertView.findViewById(R.id.text_container_linear_layout);
         // Map color to the color resource ID
         int color = ContextCompat.getColor(getContext(), mBackgroundColor);
         // Set background color for the text container
