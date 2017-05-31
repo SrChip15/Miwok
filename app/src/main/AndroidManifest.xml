@@ -29,22 +29,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".NumbersActivity"
-            android:label="@string/number_activity"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".PhrasesActivity"
-            android:label="@string/phrases_activity"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".ColorsActivity"
-            android:label="@string/colors_activity"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".FamilyActivity"
-            android:label="@string/family_activity"
-            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>
