@@ -36,4 +36,8 @@
 
     <!-- Text color for the items in each category -->
     <color name="item_text_color">#FFFFFF</color>
+
+    <!-- Tab text color for each category -->
+    <color name="tab_text_color">#A8A19E</color>
+
 </resources>
