@@ -39,4 +39,5 @@
 
     <!-- Activity name for the colors category [CHAR LIMIT=20] -->
     <string name="colors_activity">Colors</string>
+
 </resources>
